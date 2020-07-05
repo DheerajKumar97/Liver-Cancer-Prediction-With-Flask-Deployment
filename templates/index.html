@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hepatitis Predictor App</title>
+	 <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/"><b>Liver Cancer Mortality Predictor</b></a>
+  <a class="navbar-brand" href="/"><font size="2"><b>By DHEERAJ KUMAR</b></font></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+
+
+    </ul>
+ <!--    <form class="form-inline my-2 my-lg-0" method="POST" action="/predict">
+      <input class="form-control mr-sm-2" type="text" name="namequery" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Predict</button>
+    </form> -->
+  </div>
+</nav>
+<br/>
+<br/>
+<!-- blue #0686e4 
+<div class="jumbotron" style="background:blue;color:#fff">
+    <div class="container">
+      <h2 class="display-3"><b>Liver Cancer Mortality Prediction</b></h2>
+      <p>Using Machine Learning </p>
+      <p><a class="btn btn-success waves-effect btn-lg" href="/" role="button">Refresh &raquo;</a></p>
+    </div>
+  </div>-->
+<style> 
+            .dh { 
+                width:100%; 
+                height:400px; 
+            } 
+            img{ 
+                width:100%; 
+                height:400px; 
+            } 
+</style>
+<style>
+
+
+.abc .btn {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.abc .btn:hover {
+  background-color: black;
+}
+</style>
+<div class="dh ">
+                            <img class="dh" src="{{ url_for('static', filename='cover.png') }}" alt="Kolkata Knight Riders">
+<br><br>
+<style>
+#ip4 {
+    border-radius: 30px 60px 40px;
+    border: 4px solid blue;
+    padding: 20px; 
+    width: 400px;
+    height: 80px; 
+}
+
+</style>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+h1{
+  color:rgba(100, 50, 255, .8);
+  font-family: 'Algerian', Algerian;
+  color:#212121;
+}
+
+.rainbow {
+  
+   /* Font options */
+  font-family: 'Algerian', Algerian;
+  text-shadow: 2px 2px 4px #ff2600;
+  font-size:40px;
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: black;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: violet;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: black;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: violet;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+</style>
+<br><br>
+<center><h2 class="rainbow">PREDICT YOUR LIVE PROBABILITY</h2></center>
+<br>
+<div class="container">
+<form method="POST" action="/predict">
+		
+		<!-- Clean Layout -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+		          <div class="card mb-10 shadow-sm" id="custom_card">
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="age">&nbsp;&nbsp;<b>Age</b>:</label>
+		          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7" id="ip4">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>&nbsp;&nbsp;<b>Gender</b></h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio"  class="form-check-input" name="sex" value="1" checked="checked">Male
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="sex" value="2">Female
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>&nbsp;&nbsp;<b>Have you Addicted to Steriods?</b></h6
+		          	 		>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="steroid" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="steroid" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>&nbsp;&nbsp;<b>Have you Addicted to Antivirals?</b></h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="antivirals" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="antivirals" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>&nbsp;&nbsp;<b>Are You Fatigue?</b></h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="fatigue" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="fatigue" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>&nbsp;&nbsp;<b>Presence of Spider Naevi</b></h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="spiders" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="spiders" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-group">
+		          	  <label for="varices">&nbsp;&nbsp;<b>Presence of Varices:</b></label>
+		          	  <select class="form-control" id="varices" name='varices'>
+		          	    <option value="1">No</option>
+		          	    <option value="2">Yes</option>
+		          	  </select>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+					<!-- Feature Starts here -->
+					<div>
+					 <div class="form-group">
+					  <label for="varices">&nbsp;&nbsp;<b>Presence of Ascites:</b></label>
+					  <select class="form-control" id="ascites" name='ascites'>
+					    <option value="1">No</option>
+					    <option value="2">Yes</option>
+					  </select>
+					</div>
+					</div>
+					<!-- Feature Ends here -->
+				</div>
+			</div>
+
+
+
+			<div class="col-md-5">
+		          <div class="card mb-10 shadow-sm" id="custom_card2">
+		          	
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="bilirubin">&nbsp;&nbsp;<b>Bilirubin:</b></label>
+		          	  <input type="number" class="form-control form-control-sm" id="bilirubin" name="bilirubin" min=0 value='0' max="9">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="alk_phosphate">&nbsp;&nbsp;<b>Alk Phostate:</b></label>
+		          	  <input type="number" class="form-control form-control-sm" id="alk_phosphate" name="alk_phosphate" min=0 value='0' max="296">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="sgot">&nbsp;&nbsp;<b>SGOT:</b></label>
+		          	  <input type="number" class="form-control form-control-sm" id="sgot" name="sgot" min=0 value='0' max="650">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="albumin">&nbsp;&nbsp;<b>Albumin:</b></label>
+		          	  <input type="number" class="form-control form-control-sm" id="albumin" name="albumin" min=0 value='0' max="7.0">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	 <!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="protime">&nbsp;&nbsp;<b>Protime:</b></label>
+		          	  <input type="number" class="form-control form-control-sm" id="protime" name="protime" min=0 value='0' max="100">
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-group">
+		          	  <label for="histology1">&nbsp;&nbsp;<b>Histology</b></label>
+		          	  <select class="form-control" id="histology1" name="histology">
+		          	    <option value="1">No</option>
+		          	    <option value="2">Yes</option>
+		          	  </select>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+					
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- Clean Layout ends here -->	
+<button type="reset" class="btn btn-outline-success">Reset</button>
+<button type="submit" class="btn btn-primary">Predict</button>	          
+<a class="btn btn-success" href="/" role="button">Refresh &raquo;</a>
+</form>
+</div>
+<br/>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6" >
+          <div class="card mb-10 shadow-sm" id="custom_card">
+          	<h4>Result</h4>
+          	<h6>Original Data</h6>
+          	<pre>{{ sample_result }}</pre>
+          	<br/>
+
+			
+		</div>
+	</div>
+
+
+
+	<div class="col-md-6" >
+          <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:blue; color:white;padding:5px">
+          	<h4>Prediction</h4>
+			<div class="alert alert-primary" role="alert">
+			  {{ prediction }}
+			</div>
+			<hr/>
+			<h6>Probability Score</h6>
+			<p>{{ pred_probalility_score }}</p>
+			
+		</div>
+	</div>
+</div>
+	<br/>
+  <br/>
+  <br/>
+
+</div>
+   <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+}
+</style>
+<div class='footer'>
+           <div class="footer">
+
+
+<div>
+  </a>
+  <p><font face='verdana' size='2' ><b>@ 2020  All Rights Reserved.   <a href="https://www.linkedin.com/in/dheerajkumar1997/"><button type="button" class="btn-linkedin w3-blue"><i class="fa fa-linkedin left"></i></button></a>&nbsp<a href="https://github.com/DheerajKumar97?tab=repositories"><button type="button" class="btn-github w3-white"><i class="fa fa-github left"></i></button></a>&nbsp<a href="https://wa.me/+919080883289"><button type="button" class="btn-whatsapp w3-green"><i class="fa fa-whatsapp my-float left"></i></button> </b></font></p>
+  </div>
+
+           </div>
+        
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+</body>
+</html>
