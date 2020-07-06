@@ -48,11 +48,10 @@
 
 # License
 
-![Alt Text](https://github.com/DheerajKumar97/Customer-Life-Time-Value-Prediction-Flask-Deployment--Heroku/blob/master/CLTP%20Analysis%20Output/MIT%20license.jpg)
+![Alt Text](https://github.com/DheerajKumar97/Customer-Life-Time-Value-Prediction-Flask-Deployment--Heroku/blob/master/CLTP%20Analysis%20Output/GNU%20license.jpg)
 <br>
 CopyRight 2020 DHEERAJ KUMAR
 
-      https://opensource.org/licenses/MIT
+      https://www.gnu.org/licenses/gpl-3.0.en.html
       
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
