@@ -33,7 +33,7 @@
     
 # The Python file has following sections:
 
-## IPL Score Prediction.py
+## Liver Cancer Prediction.py
 
 1- **Data Preprocessing** and some **Exploratory Data Analysis** to understand the data
 
