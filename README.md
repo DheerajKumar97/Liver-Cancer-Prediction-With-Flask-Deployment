@@ -9,6 +9,7 @@
 ![Alt Text](https://github.com/DheerajKumar97/Liver-Cancer-Prediction-With-Flask-Deployment/blob/master/LIVER.gif)
 
 <br>
+
 # Table Of Contents
 - [Project Goal](#Project-Goal)
 - [Project Motivation](#Project-Motivation)
@@ -19,11 +20,11 @@
 
 # Project Goal
 
- **This Project is to designed to predict the probability of having Liver Cancer Prediction using Python, Flask, HTML**
+ This Project is to designed to predict the probability of having Liver Cancer Prediction using Python, Flask, HTML
 
 # Project Motivation
 
-**Classification problem in health care is very much interesting, iam interested to solve the problem of liver cancer using Machine Learning because it will be helpful to know that we are in danger and should undergo treatment for that**
+Classification problem in health care is very much interesting, iam interested to solve the problem of liver cancer using Machine Learning because it will be helpful to know that we are in danger and should undergo treatment for that
 
 # Requirements Installation
 
