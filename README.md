@@ -4,7 +4,7 @@
 
 # Deployment Demo
 
-![Alt Text](https://github.com/DheerajKumar97/IPL-Score-Prediction-with-Flask-Deployment-Heroku/blob/master/static/IPL%20Predictor%20Output.gif)
+![Alt Text]()
 <br>
 # Table Of Contents
 - [Project Goal](#Project-Goal)
