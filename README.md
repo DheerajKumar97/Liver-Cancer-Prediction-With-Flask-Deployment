@@ -2,9 +2,12 @@
 ![Alt Text](https://github.com/DheerajKumar97/Liver-Cancer-Prediction-With-Flask-Deployment/blob/master/static/cover.png)
 <br>
 
+**Heroku App Link** : https://livercancerpredictionapp.herokuapp.com/
+
 # Deployment Demo
 
-![Alt Text]()
+![Alt Text](https://github.com/DheerajKumar97/Liver-Cancer-Prediction-With-Flask-Deployment/blob/master/LIVER.gif)
+
 <br>
 # Table Of Contents
 - [Project Goal](#Project-Goal)
