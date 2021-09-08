@@ -8,7 +8,7 @@
 
 ![Alt Text](https://github.com/DheerajKumar97/Liver-Cancer-Prediction-With-Flask-Deployment/blob/master/LIVER.gif)
 
-<br>
+<br><br>
 
 # Table Of Contents
 - [Project Goal](#Project-Goal)
